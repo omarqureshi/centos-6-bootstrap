@@ -1,0 +1,6 @@
+rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-5.noarch.rpm
+adduser deploy
+yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison emacs
+yum update -y
+rpm -Uvh http://yum.omarqureshi.net/CentOS/6/custom/x86_64/ruby-1.9.3p125-2.el6.x86_64.rpm
+gem install puppet
